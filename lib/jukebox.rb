@@ -32,7 +32,7 @@ def play(songs)
       puts "Playing #{song}"
       break
     elsif response == song
-      puts "Playing #{songs[index -8]}"
+      puts "Playing #{songs[index -9]}"
       break
     end
   end
