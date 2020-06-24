@@ -30,8 +30,8 @@ def play(songs)
   songs.each_with_index do |song, index|
     if response.to_i == index + 1 || response.to_s == song
       puts "Playing #{song}"
+        puts "Please enter a song name or number:"
       break
-      binding.pry
     end
   end
   puts "Invalid input, please try again"
