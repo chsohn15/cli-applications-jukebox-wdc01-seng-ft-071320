@@ -31,7 +31,7 @@ response = gets.strip
     if response.to_i == index + 1 
       puts "Playing #{song}"
       return song
-    elsif response.to_s == song
+    elsif response == song
       puts "Playing #{response}"
       return song
     end
