@@ -33,5 +33,6 @@ def play(songs)
       break
     end
   end
+  binding.pry
   puts "Invalid input, please try again"
 end
