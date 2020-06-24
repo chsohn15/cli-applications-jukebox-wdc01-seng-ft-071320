@@ -28,7 +28,7 @@ def play(songs)
   puts "Please enter a song name or number:"
   response = gets.strip
   songs.each_with_index do |song, index|
-    if response.to_i == index + 1 || response.to_s == song
+    if response.to_i == index + 1 || if response.to_s == song
       puts "Playing #{song}"
       binding.pry
       break
