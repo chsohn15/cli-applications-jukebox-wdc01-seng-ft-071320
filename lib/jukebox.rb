@@ -34,4 +34,5 @@ def play(songs)
     end
   end
   puts "Invalid input, please try again"
+  puts "Please enter a song name or number:"
 end
