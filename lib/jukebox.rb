@@ -30,7 +30,6 @@ def play(songs)
   songs.each_with_index do |song, index|
     if response.to_i == index + 1 || response.to_s == song
       puts "Playing #{song}"
-      binding.pry
       break
     end
   end
