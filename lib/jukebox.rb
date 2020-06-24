@@ -34,6 +34,7 @@ def play(songs)
     elsif response == song
       puts "Playing #{response}"
       break
+      binding.pry
     end
   end
   puts "Invalid input, please try again"
