@@ -27,7 +27,6 @@ end
 def play(songs)
 puts "Please enter a song name or number:"
 response = gets.strip
-binding.pry
   songs.each_with_index do |song, index|
     if response.to_i == index + 1 
       puts "Playing #{song}"
@@ -37,5 +36,6 @@ binding.pry
       break
     end
   end
+  binding.pry
   puts "Invalid input, please try again"
 end
