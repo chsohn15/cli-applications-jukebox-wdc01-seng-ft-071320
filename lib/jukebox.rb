@@ -32,7 +32,7 @@ response = gets.strip
       puts "Playing #{song}"
       return song
     elsif response.to_s == song
-      puts "Playing #{response.to_s}"
+      puts "Playing #{response}"
       return song
     end
   end
