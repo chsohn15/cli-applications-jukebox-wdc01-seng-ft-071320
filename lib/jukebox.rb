@@ -30,10 +30,10 @@ response = gets.strip
   songs.each_with_index do |song, index|
     if response.to_i == index + 1 
       puts "Playing #{song}"
-      break
+      return song
     elsif response.to_s == song
       puts "Playing #{response.to_s}"
-      break
+      return song
     end
   end
   puts "Invalid input, please try again"
