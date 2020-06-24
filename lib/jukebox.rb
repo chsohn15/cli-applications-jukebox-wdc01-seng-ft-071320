@@ -36,6 +36,6 @@ response = response.chomp
       puts "Playing #{response.to_s}"
       break
     end
+  puts "Invalid input, please try again"
   end
-puts "Invalid input, please try again"
 end
