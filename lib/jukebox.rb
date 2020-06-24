@@ -26,8 +26,10 @@ end
 
 def play(songs)
 puts "Please enter a song name or number:"
-output = ""
 response = gets.strip
+if response == "list" || response == "help" || response == "exit"
+  puts "Please enter a song name or number:"
+end
   songs.each_with_index do |song, index|
     if response.to_i == index + 1 
       puts "Playing #{song}"
@@ -37,6 +39,5 @@ response = gets.strip
       break
     end
   end
-  output = puts "Invalid input, please try again"
-  output
+puts "Invalid input, please try again"
 end
