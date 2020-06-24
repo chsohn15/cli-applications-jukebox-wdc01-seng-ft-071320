@@ -32,7 +32,7 @@ def play(songs)
       puts "Playing #{song}"
       break
     elsif response == song
-      puts "Playing #{response}"
+      puts "Playing #{song[index]}"
       binding.pry
       break
     end
